@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.Daybook.daybook"
+    android:versionCode="3"
+    android:versionName="1.2" android:installLocation="preferExternal">
+    <uses-permission android:name="com.android.vending.CHECK_LICENSE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE"></uses-permission>
+    <uses-sdk android:minSdkVersion="15" />
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <activity
+            android:name=".DayBookActivity"
+            android:label="@string/app_name" android:theme="@android:style/Theme.Holo.Light">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".List_Client"  android:windowSoftInputMode="stateHidden" android:theme="@android:style/Theme.Holo.Light"/> 
+        <activity android:name=".Addcostmer"  android:windowSoftInputMode="stateHidden" android:theme="@android:style/Theme.Holo.Light"/> 
+        <activity android:name=".Entry"  android:windowSoftInputMode="stateHidden" android:theme="@android:style/Theme.Holo.Light" android:screenOrientation="portrait"/>
+        <activity android:name=".Pending"  android:windowSoftInputMode="stateHidden" android:theme="@android:style/Theme.Holo.Light"/>
+        <activity android:name=".Pending_trans"  android:windowSoftInputMode="stateHidden" android:theme="@android:style/Theme.Holo.Light"/>
+        <activity android:name=".Customer"  android:windowSoftInputMode="stateHidden" android:theme="@android:style/Theme.Holo.Light"/>
+        <activity android:name=".Daybook"  android:windowSoftInputMode="stateHidden" android:theme="@android:style/Theme.Holo.Light"/>
+        <activity android:name=".Reminder"  android:windowSoftInputMode="stateHidden" android:theme="@android:style/Theme.Holo.Light"/>
+        <activity android:name=".Help"  android:windowSoftInputMode="stateHidden" android:theme="@android:style/Theme.Holo.Light"/>
+        <activity android:name=".Auth"  android:windowSoftInputMode="stateHidden" android:theme="@android:style/Theme.Holo.Light"/>
+        <activity android:name=".Update_Pending"  android:windowSoftInputMode="stateHidden" android:theme="@android:style/Theme.Holo.Light"/>
+        <activity android:name=".Reminder_Setter"  android:windowSoftInputMode="stateHidden" android:theme="@android:style/Theme.Holo.Light"/>
+        <activity android:name=".Add_reminder"  android:windowSoftInputMode="stateHidden" android:theme="@android:style/Theme.Holo.Light"/>
+        <activity android:name=".days_rem"  android:windowSoftInputMode="stateHidden" android:theme="@android:style/Theme.Dialog"/>
+        <activity android:name=".Bill"  android:windowSoftInputMode="stateHidden" android:theme="@android:style/Theme.Holo.Light"/>
+        <activity android:name=".Halfpaid"  android:windowSoftInputMode="stateHidden" android:theme="@android:style/Theme.Holo.Light"/>
+        <activity android:name=".Bill_Jpeg"  android:windowSoftInputMode="stateHidden" android:theme="@android:style/Theme.Holo.Light.Dialog"/>
+        <activity android:name=".Lic"  android:windowSoftInputMode="stateHidden" android:theme="@android:style/Theme.Holo.Light"/>
+        <service android:name="com.Daybook.daybook.service.reminder_service" android:enabled="true" android:process=":daybook_background"></service>
+    </application>
+
+</manifest>

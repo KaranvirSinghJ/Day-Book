@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="DisableBaselineAlignment">
+        <ignore path="res\layout\view_bill.xml" />
+    </issue>
+    <issue id="DuplicateIds">
+        <ignore path="res\layout\entry.xml" />
+        <ignore path="res\layout\half_paid.xml" />
+        <ignore path="res\layout\main.xml" />
+    </issue>
+    <issue id="HardcodedText">
+        <ignore path="res\layout\add_reminder.xml" />
+        <ignore path="res\layout\entry.xml" />
+        <ignore path="res\layout\half_paid.xml" />
+        <ignore path="res\layout\list_client.xml" />
+        <ignore path="res\layout\main.xml" />
+        <ignore path="res\layout\pending_trans.xml" />
+        <ignore path="res\layout\view_bill.xml" />
+        <ignore path="res\layout\view_list_client.xml" />
+        <ignore path="res\layout\view_pending_trans.xml" />
+    </issue>
+    <issue id="InefficientWeight">
+        <ignore path="res\layout\pending_trans.xml" />
+        <ignore path="res\layout\view_pending_trans.xml" />
+    </issue>
+    <issue id="ObsoleteLayoutParam">
+        <ignore path="res\layout\view_bill.xml" />
+        <ignore path="res\layout\view_pending_trans.xml" />
+    </issue>
+    <issue id="ScrollViewSize">
+        <ignore path="res\layout\add_reminder.xml" />
+        <ignore path="res\layout\entry.xml" />
+        <ignore path="res\layout\half_paid.xml" />
+    </issue>
+    <issue id="TextFields">
+        <ignore path="res\layout\entry.xml" />
+        <ignore path="res\layout\half_paid.xml" />
+    </issue>
+</lint>
